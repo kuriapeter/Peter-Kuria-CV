@@ -5,16 +5,14 @@ import { Mail, Phone, MapPin, GraduationCap, Briefcase, Award, Languages, Shield
 
 const Index = () => {
   const contact = {
-    address: "P.O BOX 4061-20100, Nakuru, Kenya",
-    phone: "+254 111 903 519",
+    address: "Nakuru, Kenya",
+    phone: "0111 903 519",
     email: "kuriapeterndungu@gmail.com",
   };
 
   const education = [
-    { period: "Sep 2022 – Present", school: "Zetech University", award: "BSc. Information Technology" },
-    { period: "2021 – 2022", school: "Gituru Secondary School", award: "KCSE (C+)" },
-    { period: "2017 – 2020", school: "Bavuni Secondary School", award: "KCSE (C)" },
-    { period: "2009 – 2016", school: "Muriundu Primary School", award: "KCPE (305 marks)" },
+    { period: "Sept 2022 – Present", school: "Zetech University, Kenya", award: "Bachelor of Science in Information Technology" },
+    { period: "2022", school: "Gituru Secondary School", award: "KCSE (Mean Grade: C+)" },
   ];
 
   const certifications = [
@@ -24,22 +22,28 @@ const Index = () => {
   ];
 
   const skills = [
-    "Network troubleshooting",
-    "Router configuration",
-    "OS installation",
-    "Windows & Office activation",
-    "PC diagnosing",
+    "Network troubleshooting & router configuration",
+    "OS installation & activation (Windows, Linux)",
+    "PC diagnostics & maintenance",
+    "Cybersecurity basics (Endpoint Security, Firewall Configuration)",
+    "HTML, CSS, JavaScript, Python, MySQL, Flask",
+    "Website hosting and domain management",
+    "Data backup and recovery procedures",
+    "Version control using Git & GitHub",
+    "Network cabling and physical infrastructure setup",
+    "Remote desktop support and troubleshooting",
+    "Cybersecurity awareness training for end-users",
+    "Database design and optimization (MySQL)",
+    "Mobile app testing and debugging (Android Studio)",
+    "Microsoft Excel data analysis (pivot tables, charts)",
   ];
 
   const personalSkills = [
-    "Entrepreneurial mindset",
-    "Excellent communication",
-    "Fast learner",
-    "Interpersonal skills",
-    "Self-driven",
-    "Adaptability",
-    "Decision making",
-    "Problem solving",
+    "Strong communication & presentation skills",
+    "Problem-solving & decision-making",
+    "Team collaboration & adaptability",
+    "Entrepreneurial and self-driven mindset",
+    "Quick learner and adaptable to new technologies",
   ];
 
   const referees = [
@@ -52,7 +56,7 @@ const Index = () => {
     <div className="min-h-screen bg-background text-foreground">
       <header className="sticky top-0 z-30 border-b bg-background/80 backdrop-blur">
         <nav className="container mx-auto flex items-center justify-between py-4">
-          <a href="#home" className="font-display text-xl font-semibold story-link">Peter Ndung'u Kuria</a>
+          <a href="#home" className="font-display text-xl font-semibold story-link">Peter Ndung’u Kuria</a>
           <div className="hidden gap-6 md:flex">
             {[
               { href: "#about", label: "About" },
@@ -73,10 +77,10 @@ const Index = () => {
       <main id="home" className="bg-hero">
         <section className="container mx-auto py-20 md:py-28 text-center">
           <h1 className="text-gradient font-display text-4xl leading-tight md:text-6xl md:leading-tight animate-enter">
-            Peter Ndung'u Kuria
+            Peter Ndung’u Kuria
           </h1>
           <p className="mx-auto mt-4 max-w-2xl text-lg text-muted-foreground animate-fade-in">
-            Information Technology professional focused on networking, endpoint security, and practical problem-solving.
+            Motivated IT student skilled in networking, system administration, web development, and IT support.
           </p>
 
           <div className="mt-6 flex flex-wrap items-center justify-center gap-4 text-sm text-muted-foreground">
@@ -113,10 +117,10 @@ const Index = () => {
 
             <Card className="hover-scale">
               <CardHeader>
-                <CardTitle className="flex items-center gap-2"><Shield className="h-5 w-5" /> Career Objective</CardTitle>
+                <CardTitle className="flex items-center gap-2"><Shield className="h-5 w-5" /> Professional Summary</CardTitle>
               </CardHeader>
               <CardContent className="text-sm text-muted-foreground">
-                To pursue a challenging, productive, and rewarding career in Information Technology, applying technical knowledge and problem-solving to create meaningful impact and drive innovation within organizations and across Kenya.
+                Motivated Information Technology student with strong technical knowledge in networking, system administration, web development, and IT support. Skilled in diagnosing and resolving hardware/software issues, with additional training in cybersecurity, Web3, and computer applications. Passionate about applying technology to solve real-world problems and enhance organizational productivity.
               </CardContent>
             </Card>
           </div>
@@ -159,12 +163,51 @@ const Index = () => {
           <Card className="hover-scale">
             <CardHeader>
               <CardTitle className="flex items-center justify-between text-base">
-                <span className="inline-flex items-center gap-2"><Briefcase className="h-5 w-5" /> Kenneth Matiba Eye and Dental Hospital</span>
+                <span className="inline-flex items-center gap-2"><Briefcase className="h-5 w-5" /> IT Attachment – Kenneth Matiba Eye and Dental Hospital</span>
                 <span className="text-xs text-muted-foreground">May 2025 – Jul 2025</span>
+              </CardTitle>
+              <p className="text-xs text-muted-foreground">County Government of Murang’a</p>
+            </CardHeader>
+            <CardContent className="text-sm text-muted-foreground">
+              <ul className="list-disc pl-5 space-y-1">
+                <li>Configured and maintained routers and network connections for hospital systems.</li>
+                <li>Installed and activated Windows OS and Microsoft Office suites.</li>
+                <li>Diagnosed and repaired hardware/software issues on multiple PCs.</li>
+                <li>Provided IT support to staff, ensuring minimal downtime.</li>
+              </ul>
+            </CardContent>
+          </Card>
+
+          <Card className="hover-scale mt-6">
+            <CardHeader>
+              <CardTitle className="flex items-center justify-between text-base">
+                <span className="inline-flex items-center gap-2"><Briefcase className="h-5 w-5" /> Freelance IT Support</span>
+                <span className="text-xs text-muted-foreground">2023 – Present</span>
               </CardTitle>
             </CardHeader>
             <CardContent className="text-sm text-muted-foreground">
-              Attachment under the County Government of Murang’a.
+              <ul className="list-disc pl-5 space-y-1">
+                <li>Assisted small businesses and individuals in troubleshooting network and system issues.</li>
+                <li>Designed and deployed websites using HTML, CSS, and Python Flask.</li>
+                <li>Set up secure Wi‑Fi networks and trained users on safe internet practices.</li>
+              </ul>
+            </CardContent>
+          </Card>
+
+          <Card className="hover-scale mt-6">
+            <CardHeader>
+              <CardTitle className="flex items-center justify-between text-base">
+                <span className="inline-flex items-center gap-2"><Briefcase className="h-5 w-5" /> Academic Projects – Zetech University</span>
+                <span className="text-xs text-muted-foreground">2022 – Present</span>
+              </CardTitle>
+            </CardHeader>
+            <CardContent className="text-sm text-muted-foreground">
+              <ul className="list-disc pl-5 space-y-1">
+                <li>Developed a Company Finance Tracker Website integrating MySQL database for user roles and permissions.</li>
+                <li>Built a Branching Storyline Website with HTML, CSS, and SQL backend.</li>
+                <li>Implemented M‑Pesa STK Push payment integration in a Flask application.</li>
+                <li>Created a Payroll Overview module with automated alerts and KPI tracking.</li>
+              </ul>
             </CardContent>
           </Card>
         </section>
@@ -201,8 +244,8 @@ const Index = () => {
                 <CardTitle className="flex items-center gap-2"><Languages className="h-5 w-5" /> Spoken & Written Languages</CardTitle>
               </CardHeader>
               <CardContent className="flex flex-wrap gap-2 text-sm text-muted-foreground">
-                <Badge>English</Badge>
-                <Badge>Kiswahili</Badge>
+                <Badge>English (Fluent)</Badge>
+                <Badge>Kiswahili (Fluent)</Badge>
               </CardContent>
             </Card>
 
@@ -212,8 +255,9 @@ const Index = () => {
               </CardHeader>
               <CardContent className="flex flex-wrap gap-2 text-sm text-muted-foreground">
                 <Badge variant="outline">Playing football</Badge>
-                <Badge variant="outline">Meeting new people</Badge>
-                <Badge variant="outline">Voluntary community work</Badge>
+                <Badge variant="outline">Community volunteer work</Badge>
+                <Badge variant="outline">Networking and meeting new people</Badge>
+                <Badge variant="outline">Learning emerging technologies</Badge>
               </CardContent>
             </Card>
           </div>
@@ -221,18 +265,12 @@ const Index = () => {
 
         <section id="referees" className="container mx-auto py-12 md:py-16">
           <h2 className="font-display text-2xl mb-6">Referees</h2>
-          <div className="grid gap-6 md:grid-cols-3">
-            {referees.map((r) => (
-              <Card key={r.name} className="hover-scale">
-                <CardHeader>
-                  <CardTitle className="text-base">{r.name}</CardTitle>
-                </CardHeader>
-                <CardContent className="text-sm text-muted-foreground">
-                  <p>{r.role}</p>
-                  <p className="mt-2 inline-flex items-center gap-2"><Phone className="h-4 w-4" /> {r.phone}</p>
-                </CardContent>
-              </Card>
-            ))}
+          <div className="max-w-2xl">
+            <Card className="hover-scale">
+              <CardContent className="text-sm text-muted-foreground p-6">
+                Referees available upon request.
+              </CardContent>
+            </Card>
           </div>
         </section>
 
@@ -270,7 +308,7 @@ const Index = () => {
       </main>
 
       <footer className="border-t py-6 text-center text-xs text-muted-foreground">
-        © {new Date().getFullYear()} Peter Ndung'u Kuria. All rights reserved.
+        © {new Date().getFullYear()} Peter Ndung’u Kuria. All rights reserved.
       </footer>
     </div>
   );
